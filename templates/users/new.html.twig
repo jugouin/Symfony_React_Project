@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvel Utilisateur{% endblock %}
+
+{% block body %}
+    <div {{ react_component('users/AddUser') }}></div>
+    {{ include('users/_form.html.twig') }}
+{% endblock %}

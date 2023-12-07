@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PossessionIndex{% endblock %}
+
+{% block body %}  
+    <div {{ react_component('possessions/PossessionsIndex', {'possessions': possessions_json}) }}></div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Users{% endblock %}
+
+{% block body %}
+   <div {{ react_component('users/UserProfile', { 'user': user_json , 'possessions': possessions_json}) }}></div>
+{% endblock %}
+
+
+          

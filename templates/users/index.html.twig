@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Users index{% endblock %}
+
+{% block body %}
+    <div {{ react_component('users/UsersIndex', {'users': users_json }) }}></div>
+{% endblock %}

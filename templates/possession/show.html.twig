@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Possession{% endblock %}
+
+{% block body %}  
+    <div {{ react_component('possessions/PossessionShow', {'possession': possession_json }) }}></div>
+{% endblock %}
